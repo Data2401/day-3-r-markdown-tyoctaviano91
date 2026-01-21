@@ -1,6 +1,6 @@
 ---
 title: 'RMarkdown:  In Class Assignment'
-author: "YOUR NAME HERE"
+author: "TYLER GUERRERO"
 date: "Data 2401"
 output: 
   html_document:
@@ -40,9 +40,31 @@ Reminders:
   - An example of their writing or lyrics (formatted in a *block of text*);   
   - A _list_ of things they have written or performed (remember to use the formatting markup for a list!), with any of the titles/names in bold.     
 
+
+# Your work here
+
+## Wise Words
+
+> Darkness can not drive out darkness, only light can do that.
+
+https://deathpenaltyinfo.org/the-reverend-dr-martin-luther-king-jr-hate-cannot-drive-out-hate-only-love-can-do-that
+
+## I recommend
+
+### Kamelot
+
+```
+Dare I take a leap of faith knowing my fears will materialize, 
+I lay myself down at your grace, in stillness I surrender.
+```
+
+* **The Human Stain**
+* **Kevlar Skin**
+* **Amnesiac**
+
 # Part 2: Code Chunks
 
-```{r}
+```{r echo=FALSE}
 2 + 2
 ```
 
@@ -53,9 +75,13 @@ Complete the following steps:
 - Knit the document again.
 - Finally, write 2–3 sentences answering the following questions:
   - What changed between the two outputs?
+    + The TRUE output showed what was being calculated. The FALSE output hid it.
   - Did the calculation still run when the code was hidden?
+    + Yes, it did.
   - Why might someone want to hide code in a report?
+    + You might want to code certain code for privacy reasons. You might also want to hide it if it makes the overall presentation messier and harder to understand.
   - Why might someone want to show code in a report?
+    + Showing their code would help with validating their data. This can also help to foster trust with the audience you are sharing data with.
   
 # Part 3: A small R-in-markdown preview
 
@@ -66,7 +92,13 @@ Complete the following steps:
 > To include inline code, use this weird little `r 2+2` pattern, putting the code where I have 2+2 (which is code!) 
 > You can use the function `Sys.Date()`, which would be added like this `r Sys.Date()` but you can do something else if you want. (Look at the knit html to see what this does.)
 
- 
+## About this document.
+
+This document is used to begin familiarizing us with how to format data in RStudio. It goes over frequently required tools that are used to organize data, and it also displays what r-code looks like when knit to an html.
+
+```{r Sys.Date()}
+Sys.Date()
+```
 
 # Submitting Instructions
 
